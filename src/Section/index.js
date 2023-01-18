@@ -10,6 +10,6 @@ const Section = ({ title, body, extraHeaderContent }) => (
             {body}
         </div>
     </section>
-)
+);
 
 export default Section;

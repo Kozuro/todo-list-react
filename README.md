@@ -4,7 +4,7 @@
 
 ![Demo](https://github.com/Kozuro/Todo-List/blob/master/image/to-do%20list%20demo.gif?raw=true)
 
-https://kozuro.github.io/Todo-List/
+https://kozuro.github.io/todo-list-react/
 
 ## About
 

@@ -7,10 +7,11 @@ import Header from "./Header";
 import Container from "./Container";
 
 function App() {
+  const initialTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks"))
-  || []);
-    
+  const [tasks, setTasks] = useState(initialTasks);
+
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
@@ -42,7 +43,7 @@ function App() {
       {
         content,
         done: false,
-        id: tasks.length ? tasks[tasks.length - 1].id +1 : 1,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
       },
     ]);
   };

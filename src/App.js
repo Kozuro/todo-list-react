@@ -6,9 +6,9 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 
-function App() {
-  const initialTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+const initialTasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
+function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState(initialTasks);
 
